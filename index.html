@@ -1,9 +1,12 @@
 <html>
+	<title>Maqdoom</title>
 	<meta charset="utf-8">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
 <body>
 	<h4>Sample Sites</h4>
-	<table>
+	<input oninput="w3.filterHTML('#id01', '.item', this.value)" class="w3-input" placeholder="Search">
+	<table id="id01" class="w3-table-all">
 		<tbody>
 			<tr>
 				  <th onclick="w3.sortHTML('#professionaldata','.item', 'td:nth-child(1)')">Title</th>
