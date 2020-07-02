@@ -1,9 +1,11 @@
 <html>
 	<meta charset="utf-8">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
 <body>
 	<h4>Emplyoee Professional Data</h4>
-	<table border="1" id="professionaldata">
+	<input oninput="w3.filterHTML('#professionaldata', '.item', this.value)" class="w3-input" placeholder="Search">
+	<table border="1" id="professionaldata" class="w3-table-all">
 		<tbody>
 			<tr>
 				  <th onclick="w3.sortHTML('#professionaldata','.item', 'td:nth-child(1)')">FirstName</th>
@@ -39,7 +41,8 @@
 	</table>
 	
 	<h4>Emplyoee Personal Data</h4>
-	<table border="1" id="personaldata">
+	<input oninput="w3.filterHTML('#personaldata', '.item', this.value)" class="w3-input" placeholder="Search">
+	<table border="1" id="personaldata" class="w3-table-all">
 		<tbody>
 			<tr>
 				  <th onclick="w3.sortHTML('#personaldata','.item', 'td:nth-child(1)')">FirstName</th>
