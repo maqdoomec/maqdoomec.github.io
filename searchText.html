@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function validateOccurance() {
+
+        let sT = $("#searchTerm").val();
+        let sC = $("#searchContent").val();
+
+        if (!(sT && sT.length > 0)) {
+            showErrorPopup("Search Term should not be empty");
+            return;
+        }
+        if (!(sC && sC.length > 0)) {
+            showErrorPopup("Search Content should not be empty");
+            return;
+        }
+        if (sT.length > sC.length) {
+            showErrorPopup("Search Term should not be greater than Search Content");
+            return;
+        }
+        let count = (sC.length - sC.replace(new RegExp(escapeRegExp(sT), "g"), '').length) / sT.length;
+
+        showResultPopup("The input '"+sT+"' appears "+count+" time(s) in the search content");
+    }
+
+    function escapeRegExp(inputText) {
+        return inputText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+    }
+
+    function showErrorPopup(message) {
+        $(".popupResultMessage").html("<p>" + message + "</p>");
+        $("#id01 h2").text("Error");
+        $('#id01').css('display', 'block');
+    }
+
+    function showResultPopup(message) {
+        $(".popupResultMessage").html("<p>" + message + "</p>");
+        $("#id01 h2").text("Search Result");
+        $('#id01').css('display', 'block');
+    }   
+</script>
+
+<body>
+
+    <div class="w3-container w3-teal">
+        <h2>Find Text Occurance</h2>
+    </div>
+
+    <form class="w3-container w3-card-4">
+        <br>
+        <p>
+            <label class="w3-text-grey">Search Term</label>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" required="" id="searchTerm">
+        </p>
+
+        <p>
+            <label class="w3-text-grey">Search Content</label>
+            <textarea class="w3-input w3-border w3-hover-light-grey" required="" id="searchContent"></textarea>
+        </p>
+
+        </div>
+        <p><button type="button" class="w3-btn w3-padding w3-teal" style="width:120px"
+                onclick="validateOccurance();">Find &nbsp; ❯</button></p>
+    </form>
+
+    <div id="id01" class="w3-modal w3-animate-zoom">
+        <div class="w3-modal-content w3-card-4" style="max-width:600px">
+            <header class="w3-container w3-black">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Popup Title</h2>
+            </header>
+            <div class="w3-container w3-light-grey w3-text-brown popupResultMessage">
+                <p>Default text</p>
+            </div>
+            <footer class="w3-container w3-light-grey">
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button type="button" class="w3-btn w3-padding w3-black" style="width:120px"
+                        onclick="$('#id01').css('display', 'none');">OK</button>
+                    <button type="button" class="w3-btn w3-right w3-padding w3-black" style="width:120px"
+                        onclick="$('#id01').css('display', 'none');">Cancel</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
