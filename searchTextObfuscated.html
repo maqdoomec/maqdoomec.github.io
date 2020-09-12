@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    const _0xd152=['block','<p>','length','#searchContent','css','#id01\x20h2','val','Search\x20Term\x20should\x20not\x20be\x20greater\x20than\x20Search\x20Content','\x27\x20appears\x20','\x5c$&','Search\x20Result','#searchTerm','replace','.popupResultMessage','The\x20input\x20\x27','html','</p>','text','#id01','display'];(function(_0x3743f8,_0xd15256){const _0x42847c=function(_0x144089){while(--_0x144089){_0x3743f8['push'](_0x3743f8['shift']());}};_0x42847c(++_0xd15256);}(_0xd152,0x14c));const _0x4284=function(_0x3743f8,_0xd15256){_0x3743f8=_0x3743f8-0x0;let _0x42847c=_0xd152[_0x3743f8];return _0x42847c;};function validateOccurance(){let _0x144089=$(_0x4284('0x13'))[_0x4284('0xe')](),_0x2686c6=$(_0x4284('0xb'))[_0x4284('0xe')]();if(!(_0x144089&&_0x144089[_0x4284('0xa')]>0x0)){showErrorPopup('Search\x20Term\x20should\x20not\x20be\x20empty');return;}if(!(_0x2686c6&&_0x2686c6['length']>0x0)){showErrorPopup('Search\x20Content\x20should\x20not\x20be\x20empty');return;}if(_0x144089[_0x4284('0xa')]>_0x2686c6[_0x4284('0xa')]){showErrorPopup(_0x4284('0xf'));return;}let _0x3121a7=(_0x2686c6[_0x4284('0xa')]-_0x2686c6[_0x4284('0x0')](new RegExp(escapeRegExp(_0x144089),'g'),'')[_0x4284('0xa')])/_0x144089[_0x4284('0xa')];showResultPopup(_0x4284('0x2')+_0x144089+_0x4284('0x10')+_0x3121a7+'\x20time(s)\x20in\x20the\x20search\x20content');}function escapeRegExp(_0x4c9437){return _0x4c9437[_0x4284('0x0')](/[-[\]{}()*+?.,\\^$|#\s]/g,_0x4284('0x11'));}function showErrorPopup(_0x5e71ff){$(_0x4284('0x1'))[_0x4284('0x3')](_0x4284('0x9')+_0x5e71ff+_0x4284('0x4')),$(_0x4284('0xd'))['text']('Error'),$(_0x4284('0x6'))[_0x4284('0xc')](_0x4284('0x7'),_0x4284('0x8'));}function showResultPopup(_0x5686ca){$('.popupResultMessage')[_0x4284('0x3')](_0x4284('0x9')+_0x5686ca+_0x4284('0x4')),$('#id01\x20h2')[_0x4284('0x5')](_0x4284('0x12')),$(_0x4284('0x6'))[_0x4284('0xc')](_0x4284('0x7'),_0x4284('0x8'));}
+</script>
+
+<body>
+
+    <div class="w3-container w3-teal">
+        <h2>Find Text Occurance</h2>
+    </div>
+
+    <form class="w3-container w3-card-4">
+        <br>
+        <p>
+            <label class="w3-text-grey">Search Term</label>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" required="" id="searchTerm">
+        </p>
+
+        <p>
+            <label class="w3-text-grey">Search Content</label>
+            <textarea class="w3-input w3-border w3-hover-light-grey" required="" id="searchContent"></textarea>
+        </p>
+
+        </div>
+        <p><button type="button" class="w3-btn w3-padding w3-teal" style="width:120px"
+                onclick="validateOccurance();">Find &nbsp; ❯</button></p>
+    </form>
+
+    <div id="id01" class="w3-modal w3-animate-zoom">
+        <div class="w3-modal-content w3-card-4" style="max-width:600px">
+            <header class="w3-container w3-black">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Popup Title</h2>
+            </header>
+            <div class="w3-container w3-light-grey w3-text-brown popupResultMessage">
+                <p>Default text</p>
+            </div>
+            <footer class="w3-container w3-light-grey">
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button type="button" class="w3-btn w3-padding w3-black" style="width:120px"
+                        onclick="$('#id01').css('display', 'none');">OK</button>
+                    <button type="button" class="w3-btn w3-right w3-padding w3-black" style="width:120px"
+                        onclick="$('#id01').css('display', 'none');">Cancel</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
