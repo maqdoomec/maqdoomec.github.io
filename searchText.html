@@ -32,16 +32,19 @@
     }
 
     function showErrorPopup(message) {
-        $(".popupResultMessage").html("<p>" + message + "</p>");
-        $("#id01 h2").text("Error");
-        $('#id01').css('display', 'block');
+        $(".popupResultMessage>p").text(message);
+        $("#popUpId01 h2").text("Error");
+        $('#popUpId01').css('display', 'block');
     }
 
     function showResultPopup(message) {
         $(".popupResultMessage").html("<p>" + message + "</p>");
-        $("#id01 h2").text("Search Result");
-        $('#id01').css('display', 'block');
-    }   
+        $("#popUpId01 h2").text("Search Result");
+        $('#popUpId01').css('display', 'block');
+    }  
+	function closePopup() {
+       $('#popUpId01').css('display', 'none');
+    }  
 </script>
 
 <body>
@@ -67,10 +70,10 @@
                 onclick="validateOccurance();">Find &nbsp; ❯</button></p>
     </form>
 
-    <div id="id01" class="w3-modal w3-animate-zoom">
+    <div id="popUpId01" class="w3-modal w3-animate-zoom">
         <div class="w3-modal-content w3-card-4" style="max-width:600px">
             <header class="w3-container w3-black">
-                <span onclick="document.getElementById('id01').style.display='none'"
+                <span onclick="closePopup();"
                     class="w3-button w3-display-topright">&times;</span>
                 <h2>Popup Title</h2>
             </header>
@@ -80,9 +83,9 @@
             <footer class="w3-container w3-light-grey">
                 <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
                     <button type="button" class="w3-btn w3-padding w3-black" style="width:120px"
-                        onclick="$('#id01').css('display', 'none');">OK</button>
+                        onclick="closePopup();">OK</button>
                     <button type="button" class="w3-btn w3-right w3-padding w3-black" style="width:120px"
-                        onclick="$('#id01').css('display', 'none');">Cancel</button>
+                        onclick="closePopup();">Cancel</button>
                 </div>
             </footer>
         </div>
