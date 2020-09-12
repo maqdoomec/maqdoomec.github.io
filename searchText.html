@@ -38,7 +38,7 @@
     }
 
     function showResultPopup(message) {
-        $(".popupResultMessage").html("<p>" + message + "</p>");
+        $(".popupResultMessage>p").text(message);
         $("#popUpId01 h2").text("Search Result");
         $('#popUpId01').css('display', 'block');
     }  
