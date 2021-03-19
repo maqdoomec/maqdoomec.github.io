@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>Find Text Occurance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function checkLogin() {
+
+        function escapeRegExp(inputText) {
+            return inputText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+        }
+
+        function showErrorPopup(message) {
+            $(".popupResultMessage>p").text(message);
+            $("#popUpId01 h2").text("Error");
+            $('#popUpId01').css('display', 'block');
+        }
+
+        function showResultPopup(message) {
+            $(".popupResultMessage>p").text(message);
+            $("#popUpId01 h2").text("Search Result");
+            $('#popUpId01').css('display', 'block');
+        }
+
+        let user = $("#usernametxt").val();
+        let pwd = $("#passwordtxt").val();
+
+        if (!(user && user.length > 0)) {
+            showErrorPopup("UserName should not be empty");
+            return;
+        }
+        if (!(pwd && pwd.length > 0)) {
+            showErrorPopup("Password should not be empty");
+            return;
+        }
+        if (user=='test' && pwd=='test') {
+            window.location.href = 'searchTextObfuscated.html';
+        }
+		else{
+		showErrorPopup("UserName or Password is incorrect");
+            return;
+		}
+    }
+
+function closePopup() {
+        $('#popUpId01').css('display', 'none');
+    }
+
+</script>
+
+<body>
+
+    <div class="w3-container w3-teal">
+        <h2>User Login</h2>
+    </div>
+
+    <form class="w3-container w3-card-4" id="loginForm">
+        <br>
+        <p>
+            <label class="w3-text-grey">UserName</label>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" required="" id="usernametxt">
+        </p>
+
+        <p>
+            <label class="w3-text-grey">Password</label>
+            <input class="w3-input w3-border w3-hover-light-grey" required="" id="passwordtxt"></input>
+        </p>
+
+        </div>
+        <p><button type="button" class="w3-btn w3-padding w3-teal" style="width:120px"
+                onclick="checkLogin();">Login &nbsp; ❯</button></p>
+    </form>
+
+    <div id="popUpId01" class="w3-modal w3-animate-zoom">
+        <div class="w3-modal-content w3-card-4" style="max-width:600px">
+            <header class="w3-container w3-black">
+                <span onclick="closePopup();" class="w3-button w3-display-topright">&times;</span>
+                <h2>Popup Title</h2>
+            </header>
+            <div class="w3-container w3-light-grey w3-text-brown popupResultMessage">
+                <p>Default text</p>
+            </div>
+            <footer class="w3-container w3-light-grey">
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button type="button" class="w3-btn w3-padding w3-black" style="width:120px" onclick="closePopup();"
+                        id="popupOk">OK</button>
+                    <button type="button" class="w3-btn w3-right w3-padding w3-black" style="width:120px"
+                        onclick="closePopup();" id="popupCancel">Cancel</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
