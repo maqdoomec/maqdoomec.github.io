@@ -1,0 +1,47 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "ABC tools",
+    "children" : [ {
+      "name" : "Online String Manipulation Tools",
+      "children" : [ {
+        "name" : "Doing Login",
+        "children" : [ {
+          "name" : "doLogin",
+          "uid" : "c40cffb9b4246ad8",
+          "parentUid" : "dbd3358db704e160b8e7038bfc70393d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1637082737079,
+            "stop" : 1637082740644,
+            "duration" : 3565
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+        } ],
+        "uid" : "dbd3358db704e160b8e7038bfc70393d"
+      }, {
+        "name" : "Implement Number of Occurrence Page",
+        "children" : [ {
+          "name" : "validateFindTextOccurrence",
+          "uid" : "7240199049f145cf",
+          "parentUid" : "167d0b52f63555f4f2ecbaec659776f6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1637082740850,
+            "stop" : 1637082741953,
+            "duration" : 1103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+        } ],
+        "uid" : "167d0b52f63555f4f2ecbaec659776f6"
+      } ],
+      "uid" : "6a55f66969553d2fa4e17128fae30106"
+    } ],
+    "uid" : "b7829a1b014cd639062242587ef04e9f"
+  } ]
+}

@@ -1,0 +1,499 @@
+{
+  "uid" : "7240199049f145cf",
+  "name" : "validateFindTextOccurrence",
+  "fullName" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest.validateFindTextOccurrence",
+  "historyId" : "e1593aa2a09b37b46a981c17dfa9c886",
+  "time" : {
+    "start" : 1637082740850,
+    "stop" : 1637082741953,
+    "duration" : 1103
+  },
+  "description" : "This will validate the functionality of the Find Text Occurrence page",
+  "descriptionHtml" : "<p>This will validate the functionality of the Find Text Occurrence page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Open new browser session",
+    "time" : {
+      "start" : 1637082723530
+    },
+    "description" : "Open new browser session",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "Open new browser session",
+    "time" : {
+      "start" : 1637082723533,
+      "stop" : 1637082733296,
+      "duration" : 9763
+    },
+    "description" : "Open new browser session",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "getTestData",
+    "time" : {
+      "start" : 1637082740667,
+      "stop" : 1637082740838,
+      "duration" : 171
+    },
+    "description" : "Read test data with testID {0}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This will validate the functionality of the Find Text Occurrence page",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter the SearchTerm and SearchContent. Then Click Find Button",
+      "time" : {
+        "start" : 1637082740860,
+        "stop" : 1637082741348,
+        "duration" : 488
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Enter 'searchTermTextbox' with the value 'll'",
+        "time" : {
+          "start" : 1637082740868,
+          "stop" : 1637082741005,
+          "duration" : 137
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'searchTermTextbox' To Display",
+          "time" : {
+            "start" : 1637082740868,
+            "stop" : 1637082740918,
+            "duration" : 50
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "searchTermTextbox"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "searchTermTextbox"
+        }, {
+          "name" : "value",
+          "value" : "ll"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "Enter 'searchContentTextbox' with the value 'helloworldhelloworldscsc sdsd hello world'",
+        "time" : {
+          "start" : 1637082741006,
+          "stop" : 1637082741223,
+          "duration" : 217
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'searchContentTextbox' To Display",
+          "time" : {
+            "start" : 1637082741006,
+            "stop" : 1637082741050,
+            "duration" : 44
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "searchContentTextbox"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "searchContentTextbox"
+        }, {
+          "name" : "value",
+          "value" : "helloworldhelloworldscsc sdsd hello world"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "Click 'findButton'",
+        "time" : {
+          "start" : 1637082741223,
+          "stop" : 1637082741348,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'findButton' To Be Clickable",
+          "time" : {
+            "start" : 1637082741224,
+            "stop" : 1637082741305,
+            "duration" : 81
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Wait For Element 'findButton' To Display",
+            "time" : {
+              "start" : 1637082741227,
+              "stop" : 1637082741281,
+              "duration" : 54
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locatorName",
+              "value" : "findButton"
+            } ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "findButton"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "findButton"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "sTerm",
+        "value" : "ll"
+      }, {
+        "name" : "sContext",
+        "value" : "helloworldhelloworldscsc sdsd hello world"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 7,
+      "hasContent" : true
+    }, {
+      "name" : "Validate the app displayed number of occurrence in the PopupMessage",
+      "time" : {
+        "start" : 1637082741349,
+        "stop" : 1637082741784,
+        "duration" : 435
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text from element 'resultPopupHeader'",
+        "time" : {
+          "start" : 1637082741349,
+          "stop" : 1637082741406,
+          "duration" : 57
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'resultPopupHeader' To Display",
+          "time" : {
+            "start" : 1637082741349,
+            "stop" : 1637082741388,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "resultPopupHeader"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "resultPopupHeader"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "Get text from element 'resultPopupMessage'",
+        "time" : {
+          "start" : 1637082741406,
+          "stop" : 1637082741471,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'resultPopupMessage' To Display",
+          "time" : {
+            "start" : 1637082741406,
+            "stop" : 1637082741448,
+            "duration" : 42
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "resultPopupMessage"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "resultPopupMessage"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "Click 'resultPopupOkButton'",
+        "time" : {
+          "start" : 1637082741676,
+          "stop" : 1637082741775,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait For Element 'resultPopupOkButton' To Be Clickable",
+          "time" : {
+            "start" : 1637082741678,
+            "stop" : 1637082741740,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Wait For Element 'resultPopupOkButton' To Display",
+            "time" : {
+              "start" : 1637082741680,
+              "stop" : 1637082741713,
+              "duration" : 33
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locatorName",
+              "value" : "resultPopupOkButton"
+            } ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locatorName",
+            "value" : "resultPopupOkButton"
+          } ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locatorName",
+          "value" : "resultPopupOkButton"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 2,
+        "hasContent" : true
+      }, {
+        "name" : "Matched Occurrence Count: 3",
+        "time" : {
+          "start" : 1637082741784,
+          "stop" : 1637082741784,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "495f64f1fc515316",
+        "name" : "Popup Dispayed",
+        "source" : "495f64f1fc515316.png",
+        "type" : "image/png",
+        "size" : 28856
+      } ],
+      "parameters" : [ {
+        "name" : "sTerm",
+        "value" : "ll"
+      }, {
+        "name" : "sContext",
+        "value" : "helloworldhelloworldscsc sdsd hello world"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 8,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "9b7d1d2e256ffb12",
+      "name" : "Page screenshot",
+      "source" : "9b7d1d2e256ffb12.png",
+      "type" : "image/png",
+      "size" : 16276
+    }, {
+      "uid" : "cd18cbec5b836ec2",
+      "name" : "passed and screenshot taken!",
+      "source" : "cd18cbec5b836ec2.txt",
+      "type" : "text/plain",
+      "size" : 28
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "stepsCount" : 17,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "close the browser session",
+    "time" : {
+      "start" : 1637082741970
+    },
+    "description" : "close the browser session",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "close the browser session",
+    "time" : {
+      "start" : 1637082741970,
+      "stop" : 1637082743026,
+      "duration" : 1056
+    },
+    "description" : "close the browser session",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateFindTextOccurrence"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Web_Test_Execution_Suite"
+  }, {
+    "name" : "suite",
+    "value" : "FindTextOccurrencewithTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest"
+  }, {
+    "name" : "host",
+    "value" : "IQA_L88_Maqdoom"
+  }, {
+    "name" : "thread",
+    "value" : "5116@IQA_L88_Maqdoom.TestNG(19)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Implement Number of Occurrence Page"
+  }, {
+    "name" : "epic",
+    "value" : "ABC tools"
+  }, {
+    "name" : "feature",
+    "value" : "Online String Manipulation Tools"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  }, {
+    "name" : "dataID",
+    "value" : "FindTextOccurrence_1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7240199049f145cf.json",
+  "parameterValues" : [ "chrome", "FindTextOccurrence_1" ]
+}

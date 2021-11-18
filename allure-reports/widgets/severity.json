@@ -1,0 +1,21 @@
+[ {
+  "uid" : "7240199049f145cf",
+  "name" : "validateFindTextOccurrence",
+  "time" : {
+    "start" : 1637082740850,
+    "stop" : 1637082741953,
+    "duration" : 1103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c40cffb9b4246ad8",
+  "name" : "doLogin",
+  "time" : {
+    "start" : 1637082737079,
+    "stop" : 1637082740644,
+    "duration" : 3565
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "IQA_L88_Maqdoom",
+    "children" : [ {
+      "name" : "5116@IQA_L88_Maqdoom.TestNG(19)",
+      "children" : [ {
+        "name" : "validateFindTextOccurrence",
+        "uid" : "7240199049f145cf",
+        "parentUid" : "4b9f0c9cfd65c9948d1d030f4a0f92b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637082740850,
+          "stop" : 1637082741953,
+          "duration" : 1103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+      }, {
+        "name" : "doLogin",
+        "uid" : "c40cffb9b4246ad8",
+        "parentUid" : "4b9f0c9cfd65c9948d1d030f4a0f92b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637082737079,
+          "stop" : 1637082740644,
+          "duration" : 3565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+      } ],
+      "uid" : "4b9f0c9cfd65c9948d1d030f4a0f92b0"
+    } ],
+    "uid" : "c775b0b3b2e3543773d1057eeba733c4"
+  } ]
+}

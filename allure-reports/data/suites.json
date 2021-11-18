@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Web_Test_Execution_Suite",
+    "children" : [ {
+      "name" : "FindTextOccurrencewithTest",
+      "children" : [ {
+        "name" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest",
+        "children" : [ {
+          "name" : "doLogin",
+          "uid" : "c40cffb9b4246ad8",
+          "parentUid" : "e51edf6938da3a86bca3df64bd9bfb30",
+          "status" : "passed",
+          "time" : {
+            "start" : 1637082737079,
+            "stop" : 1637082740644,
+            "duration" : 3565
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+        }, {
+          "name" : "validateFindTextOccurrence",
+          "uid" : "7240199049f145cf",
+          "parentUid" : "e51edf6938da3a86bca3df64bd9bfb30",
+          "status" : "passed",
+          "time" : {
+            "start" : 1637082740850,
+            "stop" : 1637082741953,
+            "duration" : 1103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+        } ],
+        "uid" : "e51edf6938da3a86bca3df64bd9bfb30"
+      } ],
+      "uid" : "3a1c0482354ec46cd9ce953597990c7f"
+    } ],
+    "uid" : "5876580d92bb157b7b7f1569bf8b56d9"
+  } ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest",
+    "children" : [ {
+      "name" : "doLogin",
+      "uid" : "c40cffb9b4246ad8",
+      "parentUid" : "5c39ddee9580b58644174698adb8b33e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637082737079,
+        "stop" : 1637082740644,
+        "duration" : 3565
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+    }, {
+      "name" : "validateFindTextOccurrence",
+      "uid" : "7240199049f145cf",
+      "parentUid" : "5c39ddee9580b58644174698adb8b33e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637082740850,
+        "stop" : 1637082741953,
+        "duration" : 1103
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "FindTextOccurrence_1" ]
+    } ],
+    "uid" : "com.impactqa.test.web.TC002_FindTextOccurrenceTest"
+  } ]
+}
